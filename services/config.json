@@ -1,0 +1,21 @@
+{
+    "port": 8001,
+    "appName": "user-service",
+    "appEnv": "local",
+    "signatureKey": "E7soAmc9fWsXL3I",
+    "database": {
+      "host": "localhost",
+      "port": 5900,
+      "name": "user",
+      "username": "postgres",
+      "password": "postgres",
+      "maxOpenConnection": 10,
+      "maxLifetimeConnection": 10,
+      "maxIdleConnection": 10,
+      "maxIdleTime": 10
+    },
+    "rateLimiterMaxRequest": 1000,
+    "rateLimiterTimeSecond": 60,
+    "jwtSecretKey": "PDFzsOWQfY7Cgnk",
+    "jwtExpirationTime": 1440
+  }
