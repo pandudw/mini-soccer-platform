@@ -6,6 +6,7 @@ import (
 	"strings"
 
 	"github.com/go-playground/validator"
+	"github.com/sirupsen/logrus"
 )
 
 type ValidationResponse struct {
@@ -60,4 +61,9 @@ func ErrValidationResponse(err error) (validationResponse []ValidationResponse) 
 		}
 	}
 	return
+}
+
+func WrapError(err error) error {
+	logrus.Errorf("error:%v", err)
+	return err
 }
